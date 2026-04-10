@@ -21,7 +21,6 @@ npm-debug.log*
 Thumbs.db
 
 # uploads (IMPORTANT)
-uploads/
 
 # IDE
 .vscode/
