@@ -52,7 +52,7 @@ const Login = () => {
         {/* LOGO */}
         <div className="flex items-center gap-2">
   <img
-    src="\\Logo.png"
+    src="\Logo.png"
     alt="Gammon"
     className="h-12 mb-8 w-auto object-contain"
   />
