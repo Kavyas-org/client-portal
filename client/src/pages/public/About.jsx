@@ -6,7 +6,7 @@ const About = () => {
       <section
         className="relative w-full h-[300px] md:h-[380px] flex items-center"
         style={{
-          backgroundImage: "url('src/assets/about-imgs/image-1.png')",
+          backgroundImage: "url('/about-imgs/image-1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -79,7 +79,7 @@ const About = () => {
     {/* IMAGE */}
     <div>
       <img
-        src="src/assets/News-images/image-1.png"
+        src="/News-images/image-1.png"
         className="w-full h-[350px] object-cover"
       />
     </div>
@@ -126,7 +126,7 @@ const About = () => {
     <div className="grid md:grid-cols-2">
 
       {/* ROW 1 */}
-      <img src="src/assets/about-imgs/image-2.png" className="w-full h-[300px] object-cover" />
+      <img src="/about-imgs/image-2.png" className="w-full h-[300px] object-cover" />
 
       <div className="bg-[#1f4c7c] text-white p-10 flex flex-col justify-center">
         <h3 className="text-lg font-semibold mb-4">
@@ -151,10 +151,10 @@ const About = () => {
         </p>
       </div>
 
-      <img src="src/assets/about-imgs/image-3.png" className="w-full h-[300px] object-cover" />
+      <img src="/about-imgs/image-3.png" className="w-full h-[300px] object-cover" />
 
       {/* ROW 3 */}
-      <img src="src/assets/about-imgs/image-4.png" className="w-full h-[300px] object-cover" />
+      <img src="/about-imgs/image-4.png" className="w-full h-[300px] object-cover" />
 
       <div className="bg-[#1f4c7c] text-white p-10 flex flex-col justify-center">
         <h3 className="text-lg font-semibold mb-4">
@@ -177,10 +177,10 @@ const About = () => {
         </p>
       </div>
 
-      <img src="src/assets/about-imgs/image-5.png" className="w-full h-[300px] object-cover" />
+      <img src="/about-imgs/image-5.png" className="w-full h-[300px] object-cover" />
 
       {/* ROW 5 */}
-      <img src="src/assets/about-imgs/image-6.png" className="w-full h-[300px] object-cover" />
+      <img src="/about-imgs/image-6.png" className="w-full h-[300px] object-cover" />
 
       <div className="bg-[#1f4c7c] text-white p-10 flex flex-col justify-center">
         <h3 className="text-lg font-semibold mb-4">
@@ -226,7 +226,7 @@ const About = () => {
 
     {/* ROW 1 */}
     <img
-      src="src/assets/about-imgs/image-7.png"
+      src="/about-imgs/image-7.png"
       className="w-full h-[320px] object-cover"
     />
 
@@ -249,7 +249,7 @@ const About = () => {
     </div>
 
     <img
-      src="src/assets/about-imgs/image-8.png"
+      src="/about-imgs/image-8.png"
       className="w-full h-[320px] object-cover"
     />
 

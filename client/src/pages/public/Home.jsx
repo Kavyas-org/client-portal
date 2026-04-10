@@ -12,27 +12,27 @@ const [showVideo, setShowVideo] = useState(false);
 
 const newsData = [
   {
-    img: "src/assets/News-images/image-1.png",
+    img: "/News-images/image-1.png",
     date: "10 Feb 2026",
     title: "HKUST Partners with Industry Leaders to Pilot Nature-Related Assessment for Commercial Properties",
   },
   {
-    img: "src/assets/News-images/image-2.png",
+    img: "/News-images/image-2.png",
     date: "24 Oct 2025",
     title: "Hongkong Land pioneers Hong Kong's first tempered and laminated glass recycling solution",
   },
   {
-    img: "src/assets/News-images/image-3.png",
+    img: "/News-images/image-3.png",
     date: "1 Sep 2025",
     title: "Gammon Construction Supports the Renovation of Mother’s Choice’s Kwun Tong Service Centre",
   },
   {
-    img: "src/assets/News-images/image-4.png",
+    img: "/News-images/image-4.png",
     date: "19 May 2025",
     title: "Gammon Construction Celebrates Completion of Two Queensway Bridge Project",
   },
   {
-    img: "src/assets/News-images/image-5.png",
+    img: "/News-images/image-5.png",
     date: "18 Dec 2024",
     title: "Gammon Wins Mechanical Services Contract for Changi East Depot in Singapore",
   },
@@ -162,10 +162,10 @@ const newsData = [
     <div className="grid md:grid-cols-4 h- gap-2 mt-12">
 
       {[
-        { img: "src/assets/Projects-images/image-1.png", title: "Terminal 2 Expansion Works" },
-        { img: "src/assets/Projects-images/image-2.png", title: "M+ Museum" },
-        { img: "src/assets/Projects-images/image-3.png", title: "The Ocean Park Water World" },
-        { img: "src/assets/Projects-images/image-4.png", title: "Advanced Manufacturing Centre (AMC)" },
+        { img: "/Projects-images/image-1.png", title: "Terminal 2 Expansion Works" },
+        { img: "/Projects-images/image-2.png", title: "M+ Museum" },
+        { img: "/Projects-images/image-3.png", title: "The Ocean Park Water World" },
+        { img: "/Projects-images/image-4.png", title: "Advanced Manufacturing Centre (AMC)" },
       ].map((item, i) => (
         <div key={i} className="group cursor-pointer">
 
@@ -218,7 +218,7 @@ const newsData = [
 
   {/* IMAGE */}
   <img
-    src="src/assets/Single-img1.png"
+    src="/Single-img1.png"
     className="w-full h-full object-cover"
   />
 
@@ -298,7 +298,7 @@ const newsData = [
     <div
       className="relative mt-12 py-16 px-10"
       style={{
-        backgroundImage: "url('src/assets/core-values-imgs/image-1.png')",
+        backgroundImage: "url('/core-values-imgs/image-1.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "400px",
@@ -310,7 +310,7 @@ const newsData = [
         {/* LEFT SIDE (ARROW IMAGE) */}
         <div className="flex justify-start">
           <img
-            src="src/assets/core-values-imgs/image-2.png"
+            src="/core-values-imgs/image-2.png"
             className="w-[80%] md:w-[90%]"
           />
         </div>
@@ -319,17 +319,17 @@ const newsData = [
         <div className="flex justify-center md:justify-end items-center gap-6 mt-10 md:mt-0">
 
           <img
-            src="src/assets/core-values-imgs/image-3.png"
+            src="/core-values-imgs/image-3.png"
             className="w-28 md:w-42"
           />
 
           <img
-            src="src/assets/core-values-imgs/image-4.png"
+            src="/core-values-imgs/image-4.png"
             className="w-28 md:w-42 mt-10"
           />
 
           <img
-            src="src/assets/core-values-imgs/image-5.png"
+            src="/core-values-imgs/image-5.png"
             className="w-28 md:w-42"
           />
 
@@ -355,7 +355,7 @@ const newsData = [
     <div
       className="relative h-[350px] md:h-[420px] flex items-center"
       style={{
-        backgroundImage: "url('src/assets/extra-images/image-1.png')",
+        backgroundImage: "url('/extra-images/image-1.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -383,7 +383,7 @@ const newsData = [
     <div
       className="relative h-[350px] md:h-[420px] flex items-center"
       style={{
-        backgroundImage: "url('src/assets/extra-images/image-2.png')",
+        backgroundImage: "url('/extra-images/image-2.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -412,7 +412,7 @@ const newsData = [
   <div
     className="relative h-[350px] md:h-[420px] flex items-center justify-center text-center mt-1"
     style={{
-      backgroundImage: "url('src/assets/extra-images/image-3.png')",
+      backgroundImage: "url('/extra-images/image-3.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     }}

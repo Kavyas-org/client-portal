@@ -114,10 +114,10 @@ const Footer = () => {
           {/* CERTIFICATION LOGOS */}
           <div className="flex flex-wrap items-center gap-6">
 
-            <img src="src/assets/extra-images/image-4.png" className="h-20 rounded-full" />
-            <img src="src/assets/extra-images/image-5.png" className="h-20 rounded-md" />
-            <img src="src/assets/extra-images/image-6.png" className="h-20 rounded-full" />
-            <img src="src/assets/extra-images/image-7.png" className="h-20 rounded-full" />
+            <img src="/extra-images/image-4.png" className="h-20 rounded-full" />
+            <img src="/extra-images/image-5.png" className="h-20 rounded-md" />
+            <img src="/extra-images/image-6.png" className="h-20 rounded-full" />
+            <img src="/extra-images/image-7.png" className="h-20 rounded-full" />
 
           </div>
 

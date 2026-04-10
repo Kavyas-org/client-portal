@@ -6,7 +6,7 @@ const Business = () => {
       <section
         className="relative h-[320px] md:h-[400px] flex items-center"
         style={{
-          backgroundImage: "url('src/assets/bussiness-imgs/image-1.png')",
+          backgroundImage: "url('/bussiness-imgs/image-1.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -37,7 +37,7 @@ Gammon has been based in Hong Kong since the 1950s, a period of tremendous chang
 
           {/* LEFT BIG IMAGE */}
           <img
-            src="src/assets/bussiness-imgs/hk.png"
+            src="/bussiness-imgs/hk.png"
             className="w-full h-[400px] object-cover"
           />
 
@@ -46,7 +46,7 @@ Gammon has been based in Hong Kong since the 1950s, a period of tremendous chang
             {[1,2,3,4,5,6,7,8,9].map((i) => (
               <img
                 key={i}
-                src={`src/assets/bussiness-imgs/hk${i}.png`}
+                src={`/bussiness-imgs/hk${i}.png`}
                 className="w-full h-28 object-cover"
               />
             ))}
@@ -78,20 +78,20 @@ Gammon is registered with the Building Construction Authority under the A1 categ
 
           {/* BIG IMAGE */}
           <img
-            src="src/assets/bussiness-imgs/image-2.png"
+            src="/bussiness-imgs/image-2.png"
             className="w-full h-[400px] object-cover"
           />
 
           {/* SMALL IMAGES */}
           <div className="grid grid-cols-3 gap-3">
-            <img src="src/assets/bussiness-imgs/image-3.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-4.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-5.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-6.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-7.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-8.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-9.png" className="w-full h-32 object-cover" />
-            <img src="src/assets/bussiness-imgs/image-10.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-3.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-4.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-5.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-6.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-7.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-8.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-9.png" className="w-full h-32 object-cover" />
+            <img src="/bussiness-imgs/image-10.png" className="w-full h-32 object-cover" />
           </div>
 
         </div>

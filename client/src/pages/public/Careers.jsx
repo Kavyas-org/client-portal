@@ -42,7 +42,7 @@ const Careers = () => {
 <section className="relative h-[50vh]">
 
   <img
-    src="src/assets/carrer-img.png"
+    src="/carrer-img.png"
     className="w-full h-full object-cover"
   />
 
