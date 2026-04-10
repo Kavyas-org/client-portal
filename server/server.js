@@ -16,6 +16,7 @@ app.use(cors({
     "https://your-vercel-domain.vercel.app",
     "https://gammongroupcompanies.com"
   ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
 
