@@ -104,6 +104,8 @@ const navigate = useNavigate();
       <div>
         <h2 className="font-semibold text-gray-800">{user.name}</h2>
         <p className="text-sm text-gray-500">{user.passport}</p>
+        <p><b>Date of Birth:</b> {user.dob?.slice(0, 10)}</p>
+        <p><b>Salary:</b> ₹{user.salary}</p>
       </div>
     </div>
 

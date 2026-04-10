@@ -23,7 +23,7 @@ const upload = multer({ storage });
 ========================= */
 router.post("/", protect, upload.single("image"), async (req, res) => {
   try {
-    const { name, refId, passport, status } = req.body;
+    const { name, refId, passport, dob, salary, status } = req.body;
 
     // ✅ validation
     if (!name || !refId || !passport) {
@@ -40,6 +40,8 @@ router.post("/", protect, upload.single("image"), async (req, res) => {
       name,
       refId,
       passport,
+      dob,
+      salary,
       status: status || "Pending",
 
       // ✅ default tracking steps

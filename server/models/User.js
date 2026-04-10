@@ -4,7 +4,8 @@ const userSchema = new mongoose.Schema({
   name: String,
   refId: String,
   passport: String,
-
+  dob: String,          
+  salary: Number,  
   status: {
     type: String,
     default: "Pending"

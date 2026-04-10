@@ -106,6 +106,34 @@ const AddUser = () => {
         />
       </div>
 
+
+ <div>
+        <label className="text-xs font-semibold text-gray-500">
+         Date of Birth
+        </label>
+      <input
+  type="date"
+  name="dob"
+  onChange={handleChange}
+  className="border p-2 rounded w-full"
+/>
+      </div>
+
+ <div>
+        <label className="text-xs font-semibold text-gray-500">
+        User Salary
+        </label>
+<input
+  type="number"
+  name="salary"
+  placeholder="Salary"
+  onChange={handleChange}
+  className="border p-2 rounded w-full"
+/>
+
+      </div>
+
+
       {/* IMAGE */}
       <div>
         <label className="text-xs font-semibold text-gray-500">
