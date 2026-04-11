@@ -8,6 +8,7 @@ import About from "./pages/public/About";
 import Business from "./pages/public/Business";
 import Sustainability from "./pages/public/Sustainability";
 import Careers from "./pages/public/Careers";
+import ScrollToTop from "./components/common/ScrollToTop";
 // ADMIN
 import AdminLayout from "./components/admin/Layout";
 import Login from "./pages/admin/Login";
@@ -21,15 +22,20 @@ import Users from "./pages/admin/Users";
 
 function App() {
   return (
+
+     <>
+    <ScrollToTop />
+    
     <Routes>
 
       {/* ================= PUBLIC ================= */}
+
       <Route element={<PublicLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/about" element={<About />} />
   <Route path="/business" element={<Business />} />
-    <Route path="/Sustainability" element={<Sustainability />} />
+    <Route path="/sustainability" element={<Sustainability />} />
     <Route path="/careers" element={<Careers />} />
 
 
@@ -53,6 +59,8 @@ function App() {
       <Route path="*" element={<Home />} />
 
     </Routes>
+
+    </>
   );
 }
 

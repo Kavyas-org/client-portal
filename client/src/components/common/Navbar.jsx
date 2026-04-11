@@ -73,7 +73,7 @@ const Navbar = () => {
   { name: "HOME", link: "/" },
   { name: "ABOUT US", link: "/about" },
   { name: "OUR BUSINESSES", link: "/business" },
-  { name: "SUSTAINABILITY", link: "/Sustainability" },
+  { name: "SUSTAINABILITY", link: "/sustainability" },
   { name: "CAREERS", link: "/careers" },
   { name: "VERIFY OFFER LETTER", link: "/verify" },
 ].map((item, i) => (
