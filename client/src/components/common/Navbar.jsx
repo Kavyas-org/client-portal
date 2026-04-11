@@ -77,7 +77,7 @@ const Navbar = () => {
         { name: "CAREERS", link: "/careers" },
         { name: "VERIFY OFFER LETTER", link: "/verify" },
       ].map((item, i) => (
-        <a
+        <Link
           key={i}
           href={item.link}
           onClick={() => setOpen(false)}
@@ -89,7 +89,7 @@ const Navbar = () => {
           }}
         >
           {item.name}
-        </a>
+        </Link>
       ))}
 
     </div>
