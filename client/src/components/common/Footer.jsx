@@ -1,130 +1,118 @@
-import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-[#f2f4f7] pt-16 pb-10 text-[#1f4c7c]">
-
       <div className="max-w-7xl mx-auto px-6">
-
         {/* BACK TO TOP */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-sm flex items-center justify-center gap-2 mx-auto"
+            className="text-sm flex items-center justify-center gap-2 mx-auto hover:opacity-70 transition"
           >
             Back to Top ↑
           </button>
         </div>
 
-        {/* LINKS GRID */}
-        <div className="grid md:grid-cols-6 gap-8 text-sm">
-
-          {/* COLUMN */}
+        {/* CONTACT SECTION */}
+        <div className="grid md:grid-cols-3 gap-10">
+          {/* CONTACT */}
           <div>
-            <h3 className="font-semibold mb-3">About Us</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Corporate Profile</li>
-              <li>Company History</li>
-              <li>Core Values</li>
-              <li>Management</li>
-              <li>Code of Conduct</li>
-            </ul>
+            <h3 className="font-semibold text-lg mb-4">Contact</h3>
+
+            <div className="space-y-3 text-gray-600 text-sm">
+              <a
+                href="tel:+6582215973"
+                className="flex items-center gap-3 hover:text-[#1f4c7c] transition"
+              >
+                <FaPhoneAlt className="text-base" />
+                +6582215973
+              </a>
+
+              <a
+                href="mailto:info@gammongroup.com"
+                className="flex items-center gap-3 hover:text-[#1f4c7c] transition"
+              >
+                <FaEnvelope className="text-base" />
+                info@gammongroup.com
+              </a>
+            </div>
           </div>
 
+          {/* HEAD OFFICE */}
           <div>
-            <h3 className="font-semibold mb-3">Our Businesses</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Regions Coverage</li>
-              <li>Business Categories</li>
-              <li>Partners</li>
-            </ul>
+            <h3 className="font-semibold text-lg mb-4">Head Office</h3>
+
+            <div className="flex items-start gap-3 text-gray-600 text-sm">
+              <FaMapMarkerAlt className="mt-1" />
+              <p>
+                Co Reg No: 198001094M <br />
+                1 International Business Park
+                <br />
+                #10-01 The Synergy Singapore 609917
+              </p>
+            </div>
           </div>
 
+          {/* OTHER OFFICES */}
           <div>
-            <h3 className="font-semibold mb-3">Projects</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Overview</li>
-              <li>Residential Developments</li>
-              <li>Commercial Developments</li>
-              <li>Retail & Hotel</li>
-              <li>Industrial</li>
-              <li>Infrastructure</li>
-            </ul>
-          </div>
+            <h3 className="font-semibold text-lg mb-4">Our Offices</h3>
 
-          <div>
-            <h3 className="font-semibold mb-3">Sustainability</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Strategy</li>
-              <li>Reports</li>
-              <li>Highlights</li>
-            </ul>
-          </div>
+            <div className="space-y-4 text-gray-600 text-sm">
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="mt-1" />
+                <p>
+                22/F, Tower 1, The Quayside<br />
+                 77 Hoi Bun Road <br />
+Kwun Tong, Kowloon
+                </p>
+              </div>
 
-          <div>
-            <h3 className="font-semibold mb-3">Innovation</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Pioneering Change</li>
-              <li>Digital Future</li>
-            </ul>
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="mt-1" />
+                <p>
+                 
+22/F, Tower 1, The Quayside<br />
+                 77 Hoi Bun Road <br />
+Kwun Tong, Kowloon , Hong Kong
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div>
-            <h3 className="font-semibold mb-3">Careers</h3>
-            <ul className="space-y-2 text-gray-600">
-              <li>Overview</li>
-              <li>Development</li>
-              <li>Life at Company</li>
-              <li>Meet Team</li>
-              <li>Work with Us</li>
-            </ul>
-          </div>
-
         </div>
 
-        {/* SOCIAL + LINKS */}
-        <div className="mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-
+        {/* SOCIAL + COPYRIGHT */}
+        <div className="mt-14 border-t pt-6 flex flex-col md:flex-row items-center justify-between gap-6">
           {/* SOCIAL */}
-          <div className="flex gap-5 text-xl text-[#1f4c7c]">
-            <FaLinkedinIn />
-            <FaFacebookF />
-            <FaInstagram />
-            <FaYoutube />
+          <div className="flex gap-4 text-[#1f4c7c]">
+            <span className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
+              <FaLinkedinIn />
+            </span>
+            <span className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
+              <FaFacebookF />
+            </span>
+            <span className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
+              <FaInstagram />
+            </span>
+            <span className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
+              <FaYoutube />
+            </span>
           </div>
 
-          {/* SMALL LINKS */}
-          <div className="flex flex-wrap gap-6 text-sm text-gray-600">
-            <span>Careers</span>
-            <span>Contact Us</span>
-            <span>Sitemap</span>
-            <span>Disclaimer</span>
-            <span>Privacy Policy</span>
-          </div>
-
-        </div>
-
-        {/* COPYRIGHT + LOGOS */}
-        <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-6">
-
-          <p className="text-xs text-gray-500">
+          {/* COPYRIGHT */}
+          <p className="text-xs text-gray-500 text-center md:text-right">
             © 2026 Gammon Group Companies. All rights reserved.
           </p>
-
-          {/* CERTIFICATION LOGOS */}
-          <div className="flex flex-wrap items-center gap-6">
-
-            <img src="/extra-images/image-4.png" className="h-20 rounded-full" />
-            <img src="/extra-images/image-5.png" className="h-20 rounded-md" />
-            <img src="/extra-images/image-6.png" className="h-20 rounded-full" />
-            <img src="/extra-images/image-7.png" className="h-20 rounded-full" />
-
-          </div>
-
         </div>
-
       </div>
-
     </footer>
   );
 };
