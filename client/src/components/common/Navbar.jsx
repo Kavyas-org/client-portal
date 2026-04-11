@@ -70,27 +70,27 @@ const Navbar = () => {
     <div className="absolute right-12 top-1/2 -translate-y-1/2 text-right space-y-6">
 
       {[
-        { name: "HOME", link: "/" },
-        { name: "ABOUT US", link: "/about" },
-        { name: "OUR BUSINESSES", link: "/business" },
-        { name: "SUSTAINABILITY", link: "/Sustainability" },
-        { name: "CAREERS", link: "/careers" },
-        { name: "VERIFY OFFER LETTER", link: "/verify" },
-      ].map((item, i) => (
-        <Link
-          key={i}
-          href={item.link}
-          onClick={() => setOpen(false)}
-          className={`block text-3xl md:text-5xl font-semibold text-white hover:text-red-400 transition-all duration-500 ${
-            open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-          }`}
-          style={{
-            transitionDelay: open ? `${i * 100}ms` : "0ms",
-          }}
-        >
-          {item.name}
-        </Link>
-      ))}
+  { name: "HOME", link: "/" },
+  { name: "ABOUT US", link: "/about" },
+  { name: "OUR BUSINESSES", link: "/business" },
+  { name: "SUSTAINABILITY", link: "/Sustainability" },
+  { name: "CAREERS", link: "/careers" },
+  { name: "VERIFY OFFER LETTER", link: "/verify" },
+].map((item, i) => (
+  <Link
+    key={i}
+    to={item.link}
+    onClick={() => setOpen(false)}
+    className={`block text-3xl md:text-5xl font-semibold text-white hover:text-red-400 transition-all duration-500 ${
+      open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+    }`}
+    style={{
+      transitionDelay: open ? `${i * 100}ms` : "0ms",
+    }}
+  >
+    {item.name}
+  </Link>
+))}
 
     </div>
 
