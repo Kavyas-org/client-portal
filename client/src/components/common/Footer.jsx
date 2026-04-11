@@ -38,11 +38,11 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:info@gammongroup.com"
+                href="mailto:Recruitment.team@gammongroupcompanies.com"
                 className="flex items-center gap-3 hover:text-[#1f4c7c] transition"
               >
                 <FaEnvelope className="text-base" />
-                info@gammongroup.com
+Recruitment.team@gammongroupcompanies.com
               </a>
             </div>
           </div>
